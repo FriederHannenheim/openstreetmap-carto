@@ -100,6 +100,14 @@
     [way_pixels >= 64] { polygon-gamma: 0.3;  }
   }
 
+  [feature = 'playground_sandpit'][zoom >= 15] {
+    polygon-fill: @sand;
+    line-color: darken(@sand, 60%);
+    line-width: 0.3;
+    [way_pixels >= 4]  { polygon-gamma: 0.75; }
+    [way_pixels >= 64] { polygon-gamma: 0.3;  }
+  }
+
   [feature = 'tourism_camp_site'],
   [feature = 'tourism_caravan_site'],
   [feature = 'tourism_picnic_site'] {
